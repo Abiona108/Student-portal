@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
 </head>
 <body class="fw-bold">
-    <div class="container mt-lg-5 mt-3 shadow-lg col-lg-7 col-10">
+    <div class="container mt-lg-3 mt-3 shadow-lg col-lg-7 col-10">
         <!-- Page Header -->
         <h3 class="text-center fw-bold fs-1 py-3 text-decoration-underline border-start-0 border-end-0 ">👩🏾‍🎓School Portal👨🏾‍🎓</h3>
-        
+        <!-- Empty field alert -->
+        <div class=" bg-danger text-white fw-bold text-center p-2 rounded-1 " id="emptyField" style="display: none;">Input fields can't be submitted empty</div>
         <!-- Input Section -->
         <div class="my-2">
             <label for="" class="form-label">First Name:</label>
@@ -35,6 +37,9 @@
         
         <!-- Submit button -->
         <button class="btn btn-outline-dark border-2 w-100 my-3 py-2 fw-bold " onclick="submit()">Submit</button>
+        
+        <table class="table table-striped table-success" id="show"></table>
+
         <!-- Date & Time -->
         <div class="text-center display-6 my-3 pb-3  " id="dateTimeId"></div>
 
