@@ -11,6 +11,7 @@ function submit() {
     } else {
         var confirmation = confirm('Are you sure you want to submit the provided information?')
             if (confirmation) {
+                emptyField.style.display = "none"
                 var inputObj = {firstName,lastName,emailPhone,password}
                 studentsArray.push(inputObj)
                 show.innerHTML = ""
